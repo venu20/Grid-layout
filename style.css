@@ -1,6 +1,7 @@
 h1, h2 {
   font-family: Lato;
 }
+
 body,html {
     margin: 0;
     padding: 0;
@@ -22,7 +23,7 @@ main{
     min-height: 100vh;
     min-width: 100vw;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: minmax(100px, 1fr) 2fr;
     grid-template-rows: 100px auto 100px;
   
 }
@@ -33,6 +34,17 @@ header{
 }
 nav{
   background-color: var(--nav-color);
+  font-size: 16px;
+}
+
+nav ul{
+  list-style: none;
+  font-size: 2em;
+}
+
+nav ul li a{
+  color: var(--footer-color);
+  text-decoration: none;
 }
 
 section{
